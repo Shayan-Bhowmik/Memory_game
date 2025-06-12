@@ -82,6 +82,8 @@ function handleFlip(e) {
       secondCard.classList.add("matched");
       matched++;
 
+      flipped = [];
+
       if (matched === emojiList.length) {
         clearInterval(timerId);
         setTimeout(() => {
